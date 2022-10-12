@@ -1,0 +1,46 @@
+.List {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 1000px;
+  margin-top: 50px;
+}
+
+.portrait {
+  background: url(/assets/img/womanPortrait.jpg) center/cover;
+  h2 {
+    color: $color2;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 4rem;
+    font-family: "font-1";
+    letter-spacing: 20px;
+    opacity: 0;
+    transition: 2s;
+    transform: translateY(-150px);
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.City {
+  background: url(/assets/img/city.jpg) center/ cover;
+
+  h2 {
+    color: $color2;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 4rem;
+    font-family: "font-1";
+    letter-spacing: 20px;
+    opacity: 0;
+    transform: translateY(-150px);
+    transition: 2s;
+    
+  }
+  a {
+    text-decoration: none;
+  }
+}

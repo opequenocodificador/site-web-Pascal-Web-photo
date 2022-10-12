@@ -3,13 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body{
-    background: url(/assets/img/pic-web.jpg) center/cover;
-    height: 800px;
-}
+$color1: rgb(9, 9, 9);
+$color2:rgb(227, 225, 225);
 
 @font-face {
     font-family:"font-1" ;
     src: url(/assets/fonts/AbrilFatface-Regular.ttf);
 }
+
+body{
+    background: rgb(3,2,11);
+    background: linear-gradient(90deg, rgba(3,2,11,1) 0%, rgba(41,41,42,0.700717787114846) 35%, rgba(255,255,255,1) 100%);
+}
+
+
