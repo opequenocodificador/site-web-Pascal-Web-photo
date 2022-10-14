@@ -1,3 +1,15 @@
+//style Pointer
+const circle01 = document.querySelector(".circle1");
+const circle02 = document.querySelector(".circle2");
+
+window.addEventListener("mousemove", (e) => {
+  circle01.style.left = e.pageX + "px";
+  circle01.style.top = e.pageY + "px";
+  circle02.style.left = e.pageX + "px";
+  circle02.style.top = e.pageY + "px";
+});
+
+// Word principal page Michael web is
 const target = document.getElementById("target");
 let array = ["Photographer", "Creative", "Professional"];
 let wordIndex = 0;
@@ -37,7 +49,7 @@ loop();
 let lastScroll = 0;
 const portraitAppear = document.getElementById("portrait-tittle");
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 900) {
+  if (window.scrollY > 700) {
     portraitAppear.style.opacity = 1;
     portraitAppear.style.transform = "translateY(" + 15 + "px)";
   } else {
@@ -48,7 +60,7 @@ window.addEventListener("scroll", () => {
 
 const cityAppear = document.getElementById("city-tittle");
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 900) {
+  if (window.scrollY > 700) {
     cityAppear.style.opacity = 1;
     cityAppear.style.transform = "translateY(" + 15 + "px)";
   } else {

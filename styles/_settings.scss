@@ -1,19 +1,47 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
 }
 $color1: rgb(9, 9, 9);
-$color2:rgb(227, 225, 225);
+$color2: rgb(227, 225, 225);
 
 @font-face {
-    font-family:"font-1" ;
-    src: url(/assets/fonts/AbrilFatface-Regular.ttf);
+  font-family: "font-1";
+  src: url(/assets/fonts/AbrilFatface-Regular.ttf);
 }
 
-body{
-    background: rgb(3,2,11);
-    background: linear-gradient(90deg, rgba(3,2,11,1) 0%, rgba(41,41,42,0.700717787114846) 35%, rgba(255,255,255,1) 100%);
+body {
+  background: rgb(3, 2, 11);
+  background: linear-gradient(
+    90deg,
+    rgba(3, 2, 11, 1) 0%,
+    rgba(41, 41, 42, 0.700717787114846) 35%,
+    rgba(255, 255, 255, 1) 100%,
+  );
 }
 
+.circle1 {
+  height: 40px;
+  width: 40px;
+  border: 10px solid rgb(214, 11, 11);
+  position: absolute;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+  background: $color1;
+  opacity: 0.5;  
+}
 
+.circle2 {
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(84, 82, 82);;
+    position: absolute;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    background: rgb(84, 82, 82);
+    opacity: 0.2;
+    transition: 0.2s;
+    mix-blend-mode: difference;
+  }
